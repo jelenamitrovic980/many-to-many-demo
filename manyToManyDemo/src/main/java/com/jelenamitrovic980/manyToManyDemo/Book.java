@@ -20,7 +20,7 @@ public class Book {
 	private String bookName;
 	
 	@ManyToMany
-	@JoinTable(name = "booksAuthors", joinColumns = @JoinColumn(name = "bookId"),
+	@JoinTable(name = "books_authors", joinColumns = @JoinColumn(name = "bookId"),
 	inverseJoinColumns = @JoinColumn(name = "authorId"))
 	private List<Author> authors = new ArrayList<>();
 
